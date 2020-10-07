@@ -32,13 +32,13 @@ public class MainActivity extends AppCompatActivity {
     private float boxX;
     private float boxY;
     private float orangeX;
-    private float orangeY = 3000;
+    private float orangeY = 2000;
     private float pinkX;
-    private float pinkY = 3000;
+    private float pinkY = 2000;
     private float blackX;
-    private float blackY = 3000;
+    private float blackY = 2000;
     private float ghostX;
-    private float ghostY = 3000;
+    private float ghostY = 2000;
 
 
     // スピード
