@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/highScoreLabel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Score : 300"
+        android:textSize="18sp" />
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/startLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="タップしてスタート"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/box"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center|center_vertical"
+            app:srcCompat="@drawable/box" />
+
+        <ImageView
+            android:id="@+id/orange"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:srcCompat="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/black"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/black" />
+
+        <ImageView
+            android:id="@+id/pink"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            app:srcCompat="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/ghost"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/black" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/leftButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="leftButton"
+            android:text="Left"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/rightButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="rightButton"
+            android:text="Right"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</LinearLayout>
